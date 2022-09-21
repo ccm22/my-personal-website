@@ -107,16 +107,23 @@
     font-weight: 500;
 }
 
-/* about section styling */
+
+
+/* About section styling */
+
 section {
     padding: 100px 0;
 }
 
 .about {
     font-family: 'poppins', sans-serif;
+    display: flex;
 }
 
-.about .title {
+/* About title start */
+
+/* This formats the h2 title */
+.about-me .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -126,7 +133,8 @@ section {
     font-family: 'Ubuntu' sans-serif;
 }
 
-.about .title::before {
+/* This underlines the About me h2 title */
+.about-me .title::before {
     content: "";
     position: absolute;
     bottom: 0px;
@@ -137,7 +145,8 @@ section {
     transform: translateX(-50%);
 }
 
-.about .title::after {
+/* This adds in the red My Story */
+.about-me .title::after {
     content: "My Story";
     position: absolute;
     bottom: -12px;
@@ -149,34 +158,30 @@ section {
     transform: translateX(-50%);
 }
 
-/* This moved the img to the center */
-.about .about-content {
+/* Now, trying to get flexbox to work with about img and p */
+.flex-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
-
-.about .about-content .left {
-    width: 45%;
+.about-item {
+    width: 2fr;
+    height: 2fr;
+    background-color: lightgray;
+    flex: 1 0 0;
 }
 
-.about .about-content .right {
-    width: 55%;
+#img {
+    margin: 10px;
+    padding-left: 100px;
 }
 
-.about .about-content .right .text {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+#description {
+    display: flex;
+    font-size: auto;
+    padding: 50px;
 }
 
 /* stopped at 41:03 */
+
