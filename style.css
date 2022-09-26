@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 /* Start of navbar CSS */
 
 /* Moves the navbar content inward from the edges */
@@ -185,3 +186,219 @@ section {
 
 /* stopped at 41:03 */
 
+/* Services title start */
+
+/* This formats the h2 title */
+.services-offered .title2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+/* This underlines the Services h2 title */
+.services-offered .title2::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+/* This adds in the red "Available" */
+.services-offered .title2::after {
+    content: "Available";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+/* Now, trying to get flexbox to work with about img and p */
+.flex-container2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services-item {
+    width: 2fr;
+    height: 2fr;
+    background-color: lightgray;
+    flex: 1 0 0;
+}
+
+#img2 {
+    margin: 10px;
+    padding-left: 100px;
+}
+
+#description2 {
+    display: flex;
+    font-size: auto;
+    padding: 50px;
+}
+
+/* Skills title start */
+
+/* This formats the h2 title */
+.skills-offered .title3 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+/* This underlines the Skills h2 title */
+.skills-offered .title3::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+/* This adds in the red "On Offer" */
+.skills-offered .title3::after {
+    content: "On Offer";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+/* Now, trying to get flexbox to work with about img and p */
+.flex-container3 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    width: 2fr;
+    height: 2fr;
+    background-color: lightgray;
+    flex: 1 0 0;
+}
+
+#img3 {
+    margin: 10px;
+    padding-left: 100px;
+}
+
+#description3 {
+    display: flex;
+    font-size: auto;
+    padding: 50px;
+}
+
+
+/* Contact styling start */
+
+.contact-me {
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-me .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-between;
+}
+
+/* Makes the column with contact text more narrow */
+.contact-me .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact-me .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Justifies the Contact info text */
+
+contact-me .contact-content .left p{
+    text-align: justify;
+}
+/* Spaces the Name, Address and Email */
+.contact-me .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact-me .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+/* Provides spacing between icons and text */
+.contact-me .contact-content .row .info {
+    margin-left: 30px;
+}
+
+/* Styles the Contact icons */
+.contact-me .contact-content .row i{
+    font-size: 30px;
+}
+
+/* This formats the h2 title */
+.contact-me .title4 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+/* This underlines the contact h2 title */
+.contact-me .title4::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 280px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+/* This adds in the red "For More Information" */
+.contact-me .title4::after {
+    content: "For More Information";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.contact title4::after{
+    content: "get in touch";
+}
