@@ -363,6 +363,17 @@ contact-me .contact-content .left p{
     font-size: 30px;
 }
 
+/* Styles the sub-titles - Not working yet 
+.contact-me .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact-me .contact-content .info .sub-title {
+    color: #333;
+}
+
+*/
+
 /* This formats the h2 title */
 .contact-me .title4 {
     position: relative;
